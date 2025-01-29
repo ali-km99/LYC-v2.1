@@ -381,7 +381,7 @@ div {
   background-position-x: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 1100px;
+  min-height: 1000px;
 }
 
 /* Ensure proper RTL layout for flex items */
