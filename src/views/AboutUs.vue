@@ -378,8 +378,6 @@ div {
 } */
 
 .hero-section {
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 1100px;
