@@ -22,9 +22,9 @@ const phoneNum = ref<string>('')
 const message = ref<string>('')
 
 const sendMail = () => {
-  const serviceID = 'service_yvtufdq'
-  const templateID = 'template_agx0h1k'
-  const publicKey = 'your_public_key_here'
+  const serviceID = 'service_mrnlt5a'
+  const templateID = 'template_rro9a0q'
+  const publicKey = 'ZTSx4WKT91MjXVqLB'
 
   const params = {
     user_name: name.value,
