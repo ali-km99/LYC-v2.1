@@ -80,7 +80,11 @@ const handleNavigation = (): void => {
         </div>
       </nav>
       <div class="flex justify-center mt-8 space-x-6">
-        <a href="https://www.facebook.com/LibyanYachtClub" class="text-gray-400 hover:text-white">
+        <a
+          href="https://www.facebook.com/LibyanYachtClub"
+          target="_blank"
+          class="text-gray-400 hover:text-white"
+        >
           <span class="sr-only">Facebook</span>
           <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -90,7 +94,11 @@ const handleNavigation = (): void => {
             ></path>
           </svg>
         </a>
-        <a href="https://www.instagram.com/libyanyacht" class="text-gray-400 hover:text-white">
+        <a
+          href="https://www.instagram.com/libyanyacht"
+          target="_blank"
+          class="text-gray-400 hover:text-white"
+        >
           <span class="sr-only">Instagram</span>
           <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -100,26 +108,12 @@ const handleNavigation = (): void => {
             ></path>
           </svg>
         </a>
-        <a href="#" class="text-gray-400 hover:text-white">
-          <!--
 
-          viewBox="0 0 24 24"
-
-          aria-hidden="true"
-           -->
-          <span class="sr-only">x</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            viewBox="0 0 32 32"
-            fill="currentColor"
-          >
-            <path
-              d="M18.42,14.009L27.891,3h-2.244l-8.224,9.559L10.855,3H3.28l9.932,14.455L3.28,29h2.244l8.684-10.095,6.936,10.095h7.576l-10.301-14.991h0Zm-3.074,3.573l-1.006-1.439L6.333,4.69h3.447l6.462,9.243,1.006,1.439,8.4,12.015h-3.447l-6.854-9.804h0Z"
-            ></path>
-          </svg>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-white">
+        <a
+          href="https://www.youtube.com/@libyanyachtclub"
+          target="_blank"
+          class="text-gray-400 hover:text-white"
+        >
           <!--
 
           viewBox="0 0 24 24"

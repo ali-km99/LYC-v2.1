@@ -22,7 +22,7 @@ const phoneNum = ref<string>('')
 const message = ref<string>('')
 
 const sendMail = () => {
-  const serviceID = 'service_mrnlt5a'
+  const serviceID = 'service_k8jyt0o'
   const templateID = 'template_rro9a0q'
   const publicKey = 'ZTSx4WKT91MjXVqLB'
 
@@ -461,6 +461,8 @@ const sendMail = () => {
   min-height: 1100px;
   /* background-size: cover; */
   background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: right;
 }
 
 /* .text-img {
