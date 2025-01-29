@@ -14,33 +14,35 @@ import {
   mdiSend,
 } from '@mdi/js'
 import { ref } from 'vue'
-const name = ref('')
-const email = ref('')
-const phoneNum = ref('')
-const massege = ref('')
+const name = ref<string>('')
+const email = ref<string>('')
+const phoneNum = ref<string>('')
+const message = ref<string>('')
 
-// function sendMail() {
-//   const params = {
-//     user_name: massege,
-//     user_email: email,
-//     user_phone: phoneNum,
-//     message: massege,
-//   }
+const submit = () => {}
+const sendMail = () => {
+  const serviceID = 'service_mrnlt5a'
+  const templateID = 'template_rro9a0q'
+  const publicKey = 'ZTSx4WKT91MjXVqLB'
+  const params = {
+    user_name: name.value,
+    user_email: email.value,
+    user_phone: phoneNum.value,
+    message: message.value,
+  }
 
-//   const serviceID = 'service_yvtufdq'
-//   const templateID = 'template_agx0h1k'
-//   emailjs
-//     .send(serviceID, templateID, params)
-//     .then((res) => {
-//       // document.getElementById('#name2').value = ''
-//       // document.getElementById('#email2').value = ''
-//       // document.getElementById('#message2').value = ''
-
-//       console.log(res)
-//       window.alert('Your message sent successfully!!')
-//     })
-//     .catch((err) => console.log(err))
-// }
+  emailjs
+    .send(serviceID, templateID, params, publicKey)
+    .then((res) => {
+      console.log(res)
+      window.alert('Your message sent successfully!')
+      name.value = ''
+      email.value = ''
+      phoneNum.value = ''
+      message.value = ''
+    })
+    .catch((err) => console.error('Failed to send email:', err))
+}
 </script>
 
 <template>
@@ -384,11 +386,13 @@ const massege = ref('')
           <div class="space-y-8 mt-8">
             <div class="flex lg:gap-2 gap-6 lg:flex-row flex-col">
               <v-text-field
+                v-model="name"
                 :label="$i18n.locale == 'ar' ? 'الأسم' : 'Name'"
                 :prepend-icon="mdiAccount"
                 variant="underlined"
               ></v-text-field>
               <v-text-field
+                v-model="phone"
                 :label="$i18n.locale == 'ar' ? 'رقم الهاتف' : 'Phone number'"
                 :prepend-icon="mdiPhone"
                 variant="underlined"
@@ -396,17 +400,20 @@ const massege = ref('')
             </div>
 
             <v-text-field
+              v-model="phoneNum"
               :label="$i18n.locale == 'ar' ? 'البريد الأكتروني' : 'Email'"
               :prepend-icon="mdiEmail"
               variant="underlined"
             ></v-text-field>
 
             <v-textarea
+              v-model="message"
               :label="$i18n.locale == 'ar' ? 'أكتب الرساله هنا ' : 'Write your message here'"
               :prepend-icon="mdiMail"
               variant="underlined"
             ></v-textarea>
             <v-btn
+              :onclick="sendMail"
               color="#3B82F6"
               :text="$i18n.locale == 'ar' ? 'أرسل رساله   ' : 'Send  message '"
               :append-icon="mdiSend"
