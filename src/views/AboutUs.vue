@@ -109,9 +109,7 @@ const ENobjectives = [
 <template>
   <div class="min-h-screen bg-[#0B6D90] lg:bg-white">
     <!-- Hero Section with Fixed Background -->
-    <div
-      class="hero-section lg:bg-about bg-aboutSmall lg:bg-cover sm:bg-contain w-full relative mb-8"
-    >
+    <div class="hero-section lg:bg-about bg-aboutSmall h-[951px] w-full relative mb-8">
       <div class="absolute inset-0"></div>
       <div class="hidden lg:block">
         <Navbar />
