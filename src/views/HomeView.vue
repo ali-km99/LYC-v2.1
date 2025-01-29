@@ -13,35 +13,34 @@ import {
   mdiPhoneOutline,
   mdiSend,
 } from '@mdi/js'
+import emailjs from 'emailjs-com'
 import { ref } from 'vue'
+
 const name = ref<string>('')
-const email = ref<string>('')
+const userEmail = ref<string>('') // تغيير الاسم لتجنب التعارض
 const phoneNum = ref<string>('')
 const message = ref<string>('')
 
-const submit = () => {}
 const sendMail = () => {
-  const serviceID = 'service_mrnlt5a'
-  const templateID = 'template_rro9a0q'
-  const publicKey = 'ZTSx4WKT91MjXVqLB'
+  const serviceID = 'service_yvtufdq'
+  const templateID = 'template_agx0h1k'
+  const publicKey = 'your_public_key_here'
+
   const params = {
     user_name: name.value,
-    user_email: email.value,
+    user_email: userEmail.value,
     user_phone: phoneNum.value,
     message: message.value,
   }
 
   emailjs
     .send(serviceID, templateID, params, publicKey)
-    .then((res) => {
-      console.log(res)
-      window.alert('Your message sent successfully!')
-      name.value = ''
-      email.value = ''
-      phoneNum.value = ''
-      message.value = ''
+    .then((res: any) => {
+      // استخدم `any` لتجنب الخطأ
+      console.log('Success:', res)
+      alert('تم إرسال الرسالة بنجاح!')
     })
-    .catch((err) => console.error('Failed to send email:', err))
+    .catch((err: any) => console.error('Failed to send email:', err))
 }
 </script>
 
@@ -392,7 +391,7 @@ const sendMail = () => {
                 variant="underlined"
               ></v-text-field>
               <v-text-field
-                v-model="phone"
+                v-model="phoneNum"
                 :label="$i18n.locale == 'ar' ? 'رقم الهاتف' : 'Phone number'"
                 :prepend-icon="mdiPhone"
                 variant="underlined"
@@ -400,7 +399,7 @@ const sendMail = () => {
             </div>
 
             <v-text-field
-              v-model="phoneNum"
+              v-model="userEmail"
               :label="$i18n.locale == 'ar' ? 'البريد الأكتروني' : 'Email'"
               :prepend-icon="mdiEmail"
               variant="underlined"
