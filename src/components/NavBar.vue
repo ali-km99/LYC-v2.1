@@ -17,7 +17,9 @@ const handleNavigation = (): void => {
     <nav class="h-28 w-full bg-white/20 backdrop-blur-sm sticky top-0">
       <div class="flex items-center justify-between">
         <!-- الشعار -->
-        <img src="../assets/imeges/logo2.png" width="100px" alt="main-logo" class="m-2 ml-10" />
+        <RouterLink :to="{ name: 'home' }">
+          <img src="../assets/imeges/logo2.png" width="100px" alt="main-logo" class="m-2 ml-10"
+        /></RouterLink>
 
         <!-- القائمة -->
         <div class="flex flex-col">

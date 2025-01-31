@@ -3,6 +3,8 @@ export const photoGroups = [
     id: 'racing',
     title: ' من السباقات',
     courseInfo: 'لقطات من  مغامرات سباقات القوارب الشراعية',
+    titleEN: 'From the Races',
+    courseInfoEN: 'Snapshots from Sailing Race Adventures',
     photos: [
       {
         id: '1',
@@ -112,6 +114,9 @@ export const photoGroups = [
     title: 'التدريب والتعليم',
     courseInfo:
       'برنامج الإبحار الشامل: من الأساسيات إلى التقنيات المتقدمة. نظام مكون من ثلاث مستويات بما في ذلك دورات المبتدئين (8 أسابيع)، والمتوسطين (10 أسابيع)، والمتقدمين (12 أسبوعًا).',
+    titleEN: 'Training and Education',
+    courseInfoEN:
+      'Comprehensive Sailing Program: From Basics to Advanced Techniques. A three-level system including Beginner Courses (8 weeks), Intermediate Courses (10 weeks), and Advanced Courses (12 weeks).',
     photos: [
       {
         id: '6',
@@ -228,11 +233,7 @@ export const photoGroups = [
         url: 'https://lyc.ly/assets/imeges/a18.jpg',
         title: 'Knot Mastery',
       },
-      {
-        id: '10',
-        url: 'https://lyc.ly/assets/imeges/a19.jpg',
-        title: 'Knot Mastery',
-      },
+
       {
         id: '10',
         url: 'https://lyc.ly/assets/imeges/a20.jpg',
@@ -290,6 +291,9 @@ export const photoGroups = [
     title: 'برنامج الشباب',
     courseInfo:
       'برنامج تنمية الشباب: تعليم الإبحار المناسب للفئة العمرية من 8 إلى 17 عامًا. بما في ذلك المعسكرات الصيفية (أسبوعين)، وبرنامج ما بعد المدرسة (3 أشهر)، وفريق سباق الشباب (طوال العام).',
+    titleEN: 'Youth Program',
+    courseInfoEN:
+      'Youth Development Program: Age-appropriate sailing education for ages 8 to 17. Includes Summer Camps (2 weeks), After-School Program (3 months), and Youth Racing Team (year-round).',
     photos: [
       {
         id: '11',
@@ -340,9 +344,10 @@ export const photoGroups = [
   },
   {
     id: 'social',
-    title: 'فعاليات النادي والمناسبات الاجتماعية',
-    courseInfo:
-      'برنامج الإبحار الاجتماعي: فعاليات إبحار اجتماعية منتظمة بما في ذلك رحلات غروب الشمس الشهرية، وسباقات النادي في نهاية الأسبوع، ورحلات استكشاف البحر الأبيض المتوسط ​​السنوية.',
+    title: 'البطولات والأنجازات',
+    courseInfo: 'صورة من لحظات التتويج و الفوز بالبطولات ',
+    titleEN: 'Championships and Achievements',
+    courseInfoEN: 'A glimpse of crowning moments and championship victories.',
     photos: [
       {
         id: '15',

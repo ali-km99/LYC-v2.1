@@ -22,8 +22,8 @@ const phoneNum = ref<string>('')
 const message = ref<string>('')
 
 const sendMail = () => {
-  const serviceID = 'service_k8jyt0o'
-  const templateID = 'template_rro9a0q'
+  const serviceID = 'service_mrnlt5a'
+  const templateID = 'template_mt8aign'
   const publicKey = 'ZTSx4WKT91MjXVqLB'
 
   const params = {

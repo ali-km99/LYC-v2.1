@@ -8,7 +8,7 @@
     <h1 class="text-4xl font-bold text-primary text-center mb-12">{{ $t('Advertisements') }}</h1>
 
     <!-- Announcements Section -->
-    <div class="mt-6 space-y-6" v-if="races.length > 0">
+    <div class="mt-6 space-y-6" v-if="races">
       <div v-for="race in races" :key="race.id" class="bg-white shadow-md rounded-md p-6">
         <!-- Race Header -->
         <div class="border-b pb-4 mb-4">

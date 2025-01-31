@@ -52,7 +52,7 @@ export const programs: Program[] = [
     icon: '🤝',
     img: '',
     color: '',
-    backgroundImage: 'https://lyc.ly/assets/imeges/typs4.jpg',
+    backgroundImage: 'https://lyc.ly/assets/imeges/img90.jpg',
     fullDescription: `
     التنمية المجتمعية تهدف إلى تعزيز العلاقة بين النادي والمجتمع المحلي
      من خلال مجموعة متنوعة من الأنشطة والبرامج.
@@ -91,7 +91,11 @@ export const programs: Program[] = [
 
 `,
     text5a: `. برامج تطوعية: تشجيع الأعضاء على المشاركة في الأنشطة التطوعية لخدمة المجتمع المحلي`,
-    text6: `التنمية المجتمعية لنادٍ بحري يمكن أن تجعل النادي جزءًا حيويًا من المجتمع، مما يساهم في تعزيز الوعي البيئي وتطوير مهارات الأفراد وتحقيق التفاعل الاجتماعي الإيجابي.
+    text6: `وذالك
+لجعل النادي جزءً
+    ا حيويًا من المجتمع، مما يساهم في تعزيز
+     الوعي البيئي وتطوير مهارات الأفراد
+     وتحقيق التفاعل الاجتماعي الإيجابي.
 `,
   },
 ]
@@ -150,7 +154,7 @@ export const programsEN: Program[] = [
     icon: '🤝',
     img: '',
     color: '',
-    backgroundImage: 'https://lyc.ly/assets/imeges/typs4.jpg',
+    backgroundImage: 'https://lyc.ly/assets/imeges/img90.jpg',
     fullDescription: `
       Community development aims to strengthen the relationship between the club and the local community through various activities and programs.
     `,
@@ -190,7 +194,7 @@ export const programsEN: Program[] = [
       - Volunteer programs: Encouraging members to participate in volunteer activities to serve the local community.
     `,
     text6: `
-      Community development at a maritime club can make the club a vital part of the community, contributing to environmental awareness, skill development, and positive social interaction.
+      Community development can make the club a vital part of the community, contributing to environmental awareness, skill development, and positive social interaction.
     `,
   },
 ]

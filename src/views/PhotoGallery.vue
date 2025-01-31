@@ -34,8 +34,8 @@
         <div v-for="group in filteredGroups" :key="group.id">
           <PhotoGroup
             :key="group.id"
-            :title="group.title"
-            :course-info="group.courseInfo"
+            :title="$i18n.locale == 'ar' ? group.title : group.titleEN"
+            :course-info="$i18n.locale == 'ar' ? group.courseInfo : group.courseInfoEN"
             :photos="group.photos"
           />
         </div>
